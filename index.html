@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DefineMe</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 font-[outfit]">
+  
+    <div class="md:mx-[10%] mx-[5%] py-10 min-h-screen flex flex-col">
+        <h1 class="text-[30px] text-white mb-2">✨DefineMe✨</h1>
+        <div class="flex md:flex-row flex-col gap-2 mb-10">
+            <input type="text" placeholder="Search" class="input input-bordered w-full" id="word" />
+            <button class="btn btn-success" onclick="fetchData()">Define</button>
+        </div>
+        <div class="p-5 bg-gray-100 rounded-lg min-h-[70vh]">
+            <ul id="result" class="list-disc list-inside">
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
